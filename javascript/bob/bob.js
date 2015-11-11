@@ -6,8 +6,7 @@
 var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
-  var shout = /^[0-9\xC0-\xDD ,%^*@#$(*^!?]*[A-Z]+([0-9A-Z\xC0-\xDD ,%^*@#$(*^!?])*$/;
-
+  var shout = /^[^a-z\xDF-\xFF]*[A-Z]+[^a-z\xDF-\xFF]*$/;
   var question = /\?$/;
 
   // Shouting
